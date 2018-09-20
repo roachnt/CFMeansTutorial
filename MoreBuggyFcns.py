@@ -4,6 +4,7 @@ import random
 import numbers
 import pandas as pd
 import math
+from inspect import signature
 
 
 def fluky(good_val, bad_val, gen_bad, p):
@@ -212,8 +213,10 @@ phi_names_set = {'p_1','r_1','x_2','y_3','n_2','y_2','p_2','r_2','x_3','y_4','n_
 #this function merge local variables and its covariates into global_value_dict
 def record_locals(lo, i):
     for name in lo:
+        # if this postfix is in the name of the variable, skip it
         if '_IV' in name:
             continue
+        # if the variable is a number and in the causal map
         if isinstance(lo[name], numbers.Number) and name in causal_map:
             if name not in global_value_dict:
                 columns = causal_map[name].copy()
@@ -248,13 +251,20 @@ fails = 0
 #
 # print("\n{0:10d} failures".format(fails))
 
-for i in range(1, 500):
-    x = random.randint(1, 10)
-    n = random.randint(1, 5)
-    good_dict[test_counter] = right_to_left_exp(x, n)
-    bad_dict[test_counter] = bad_right_to_left_exp(x, n)
-    if abs(bad_dict[test_counter] - good_dict[test_counter]) > 0:
-        fails = fails + 1
-    test_counter += 1
+def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
+    global test_counter
+    global fails
+    print("------- Test of Function", bad_func.__name__, "-------")
+    sig = signature(good_func)
+    args_length = len(sig.parameters)
+    for _ in range(n_tests):
+        args = [random.randint(arg_min, arg_max) for arg in range(args_length)]
+        good_dict[test_counter] = good_func(*args)
+        bad_dict[test_counter] = bad_func(*args)
+        if abs(bad_dict[test_counter] - good_dict[test_counter]) > 0:
+            fails = fails + 1
+        test_counter += 1
 
-print("\n{0:10d} failures".format(fails))
+test_function(right_to_left_exp, bad_right_to_left_exp, 5000)
+
+print("Failures: {0:10d}".format(fails))

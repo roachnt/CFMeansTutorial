@@ -76,7 +76,7 @@ def get_quantiled_tr(W):
 def predict_causal_risk_list(train_set_X, quantiles, model):
 
     risk_list = []
-    print(train_set_X.columns[0] + " being treatment...")
+    # print(train_set_X.columns[0] + " being treatment...")
     X_with_quantile = train_set_X.drop(train_set_X.columns[0], axis=1)
 
     for quantile in quantiles:
