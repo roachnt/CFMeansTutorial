@@ -16,8 +16,9 @@ def fluky(good_val, bad_val, gen_bad, p):
     else:
         return good_val
 
+
 def sumOdds(n):
-    sum = 0;
+    sum = 0
     while n >= 1:
         if n % 2 == 1:
             sum += n
@@ -26,16 +27,17 @@ def sumOdds(n):
 
 
 def bad_sumOdds(n):
-    gen_bad = random.random() > 0.5;  # Indicates when fluky should generate a bad value.
-    n_0 = n;
-    sum_0 = None;
-    sum_3 = None;
-    sum_1 = None;
-    sum_2 = None;
-    sum_4 = None;
-    n_2 = None;
-    n_1 = None;
-    n_3 = None;
+    # Indicates when fluky should generate a bad value.
+    gen_bad = random.random() > 0.5
+    n_0 = n
+    sum_0 = None
+    sum_3 = None
+    sum_1 = None
+    sum_2 = None
+    sum_4 = None
+    n_2 = None
+    n_1 = None
+    n_3 = None
 
     sum_0 = 0
     phi0 = Phi()
@@ -56,9 +58,14 @@ def bad_sumOdds(n):
     record_locals(lo, test_counter)
     return sum_4
 
+#generate python causal map
+causal_map = {'n_2':['n_0','n_1','n_1','n_0'],'n_1':['n_2'],'n_3':['n_0','n_1','n_1','n_0'],'sum_3':['sum_0','sum_2','n_1','n_0'],'sum_2':['sum_1','sum_3','n_2'],'sum_1':['sum_3','n_2'],'sum_0':[],'sum_4':['sum_0','sum_2','n_1','n_0'],}
+
+#added phi names
+phi_names_set = {'sum_3','n_2','sum_2','sum_4','n_3',}
 
 def sum_divs_and_rems(n):
-    sum = 0;
+    sum = 0
     while n >= 1:
         d = n // 2
         r = n % 2
@@ -73,25 +80,25 @@ def sum_divs_and_rems(n):
 
 def bad_sum_divs_and_rems(n):
     gen_bad = random.random() > 0.5
-    n_0 = n;
-    r_1 = None;
-    r_0 = None;
-    r_2 = None;
-    d_1 = None;
-    d_0 = None;
-    d_2 = None;
-    sum_0 = None;
-    sum_4 = None;
-    sum_1 = None;
-    sum_2 = None;
-    sum_3 = None;
-    sum_5 = None;
-    n_2 = None;
-    n_1 = None;
-    n_3 = None;
-    out_1 = None;
-    out_0 = None;
-    out_2 = None;
+    n_0 = n
+    r_1 = None
+    r_0 = None
+    r_2 = None
+    d_1 = None
+    d_0 = None
+    d_2 = None
+    sum_0 = None
+    sum_4 = None
+    sum_1 = None
+    sum_2 = None
+    sum_3 = None
+    sum_5 = None
+    n_2 = None
+    n_1 = None
+    n_3 = None
+    out_1 = None
+    out_0 = None
+    out_2 = None
 
     sum_0 = 0
     phi0 = Phi()
@@ -123,17 +130,20 @@ def bad_sum_divs_and_rems(n):
     record_locals(lo, test_counter)
     return out_2
 
-
+'''
 # generate python causal map
-# causal_map = {'n_2': ['n_0', 'n_1'], 'n_1': ['n_2'], 'r_0': ['n_2'], 'n_3': ['n_0', 'n_1'], 'r_2': ['r_0'],
-#               'r_1': ['r_0'], 'sum_5': ['sum_0', 'sum_3'], 'sum_4': ['sum_0', 'sum_3'], 'out_0': ['sum_3'],
-#               'out_2': ['out_0'], 'out_1': ['out_0'], 'd_0': ['n_2'], 'sum_3': ['sum_1', 'sum_2', 'r_0'],
-#               'sum_2': ['sum_4', 'r_0'], 'sum_1': ['sum_4', 'd_0'], 'd_2': ['d_0'], 'sum_0': [], 'd_1': ['d_0'], }
-#
-# added phi names
-# phi_names_set = {'r_1', 'd_1', 'sum_4', 'n_2', 'out_1', 'sum_3', 'r_2', 'd_2', 'sum_5', 'n_3', 'out_2', }
+causal_map = {'n_2': ['n_0', 'n_1'], 'n_1': ['n_2'], 'r_0': ['n_2'], 'n_3': ['n_0', 'n_1'], 'r_2': ['r_0'],
+              'r_1': ['r_0'], 'sum_5': ['sum_0', 'sum_3'], 'sum_4': ['sum_0', 'sum_3'], 'out_0': ['sum_3'],
+              'out_2': ['out_0'], 'out_1': ['out_0'], 'd_0': ['n_2'], 'sum_3': ['sum_1', 'sum_2', 'r_0'],
+              'sum_2': ['sum_4', 'r_0'], 'sum_1': ['sum_4', 'd_0'], 'd_2': ['d_0'], 'sum_0': [], 'd_1': ['d_0'], }
 
-def right_to_left_exp(x, n): # Basic Algorithms in Number Theory by Buhler & Wagon, 2008.
+# added phi names
+phi_names_set = {'r_1', 'd_1', 'sum_4', 'n_2', 'out_1',
+                 'sum_3', 'r_2', 'd_2', 'sum_5', 'n_3', 'out_2', }
+'''
+
+# Basic Algorithms in Number Theory by Buhler & Wagon, 2008.
+def right_to_left_exp(x, n):
     y = 1
     while n > 0:
         r = n % 2
@@ -147,25 +157,25 @@ def right_to_left_exp(x, n): # Basic Algorithms in Number Theory by Buhler & Wag
 
 def bad_right_to_left_exp(x, n):
     gen_bad = random.random() > 0.5
-    x_0 = x;
-    n_0 = n;
-    p_1 = None;
-    p_0 = None;
-    p_2 = None;
-    r_1 = None;
-    r_0 = None;
-    r_2 = None;
-    x_2 = None;
-    x_1 = None;
-    x_3 = None;
-    y_0 = None;
-    y_3 = None;
-    y_1 = None;
-    y_2 = None;
-    y_4 = None;
-    n_2 = None;
-    n_1 = None;
-    n_3 = None;
+    x_0 = x
+    n_0 = n
+    p_1 = None
+    p_0 = None
+    p_2 = None
+    r_1 = None
+    r_0 = None
+    r_2 = None
+    x_2 = None
+    x_1 = None
+    x_3 = None
+    y_0 = None
+    y_3 = None
+    y_1 = None
+    y_2 = None
+    y_4 = None
+    n_2 = None
+    n_1 = None
+    n_3 = None
 
     y_0 = 1
     phi0 = Phi()
@@ -197,6 +207,7 @@ def bad_right_to_left_exp(x, n):
 
 
 # generate python causal map
+'''
 causal_map = {'n_2': ['n_0', 'n_1', 'n_0', 'n_1'], 'p_0': ['r_0'], 'n_1': ['n_2'], 'r_0': ['n_2'],
               'p_2': ['p_0', 'n_0', 'n_1'],
               'p_1': ['p_0', 'n_0', 'n_1'],
@@ -209,8 +220,11 @@ causal_map = {'n_2': ['n_0', 'n_1', 'n_0', 'n_1'], 'p_0': ['r_0'], 'n_1': ['n_2'
 
 #added phi names
 phi_names_set = {'p_1','r_1','x_2','y_3','n_2','y_2','p_2','r_2','x_3','y_4','n_3',}
+'''
 
-#this function merge local variables and its covariates into global_value_dict
+# this function merge local variables and its covariates into global_value_dict
+
+
 def record_locals(lo, i):
     for name in lo:
         # if this postfix is in the name of the variable, skip it
@@ -231,17 +245,18 @@ def record_locals(lo, i):
                     new_row.append(lo[pa])
             global_value_dict[name].loc[i] = new_row
 
+
 good_dict = {}
-#bad_dict and global_value_dict are imported by the localizer
+# bad_dict and global_value_dict are imported by the localizer
 bad_dict = {}
 global_value_dict = {}
-#test cases
+# test cases
 # args = np.arange(1, 1000)
 
 test_counter = 0
 fails = 0
 
-#running the test set
+# running the test set
 # for arg in args:
 #     bad_dict[test_counter] = bad_sum_divs_and_rems(arg)
 #     good_dict[test_counter] = sum_divs_and_rems(arg)
@@ -250,6 +265,7 @@ fails = 0
 #     test_counter += 1
 #
 # print("\n{0:10d} failures".format(fails))
+
 
 def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
     global test_counter
@@ -265,6 +281,7 @@ def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
             fails = fails + 1
         test_counter += 1
 
-test_function(right_to_left_exp, bad_right_to_left_exp, 5000)
+
+test_function(sumOdds, bad_sumOdds, 500)
 
 print("Failures: {0:10d}".format(fails))
