@@ -1,0 +1,7 @@
+  variable_name  max_risk_diff quantile1 quantile2
+1           y_1          0.866         0         9
+3           x_1          0.720         8         9
+0           n_1          0.000         0         0
+2           y_0          0.000         0         0
+4           r_0          0.000         0         0
+5           p_0          0.000         0         0
