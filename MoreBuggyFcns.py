@@ -222,10 +222,10 @@ def record_locals(local_vars, causal_map):
             column_names.append("output")
             column_names.append("incorrect")
             f.write(", ".join(column_names) +"\n")
-            values = [str(value) for value in list(local_vars.values())]
+            values = ["\"" + str(value) + "\"" if isinstance(value, list) else str(value) for value in list(local_vars.values())]
             f.write(", ".join(values))
         else:
-            values = [str(value) for value in list(local_vars.values())]
+            values = ["\"" + str(value) + "\"" if isinstance(value, list) else str(value) for value in list(local_vars.values())]
             f.write(", ".join(values))
     for name in local_vars:
         # if this postfix is in the name of the variable, skip it
@@ -272,16 +272,30 @@ def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
     global test_counter
     global fails
     print("\n------- Test of Function", bad_func.__name__, "-------")
+    
+    # Get function information
     sig = signature(good_func)
     args_length = len(sig.parameters)
+
+    # Erase contents of file for new test
     open('ssa_variables.csv', 'w').close()
+    open("result.csv", "w").close()
+
     for _ in range(n_tests):
+        # Get function arguments
         args = [random.randint(arg_min, arg_max) for arg in range(args_length)]
+
+        # Run good and bad function with args
         good_dict[test_counter] = good_func(*args)
         bad_dict[test_counter] = bad_func(*args)
+
+        # Output result of bad function
         with open("ssa_variables.csv", "a") as f:
             f.write(", " + str(bad_dict[test_counter]))
+
+        # Check if bad function was incorrect
         if abs(bad_dict[test_counter] - good_dict[test_counter]) > 0:
+            # Write result to file
             with open("ssa_variables.csv", "a") as f:
                 f.write(", " + "True" + "\n")
             fails = fails + 1
@@ -291,7 +305,7 @@ def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
         test_counter += 1
 
 
-# change this function to change the function being tested
-test_function(right_to_left_exp, bad_right_to_left_exp, 500)
+# change this function to change the function being tested and the number of tests
+test_function(right_to_left_exp, bad_right_to_left_exp, 100)
 
 print("Failures: ", fails)
