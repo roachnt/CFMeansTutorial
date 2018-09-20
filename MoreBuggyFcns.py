@@ -55,14 +55,14 @@ def bad_sumOdds(n):
     sum_4 = phi0.phiExit(sum_0, sum_2)
     n_3 = phi0.phiExit(n_0, n_1)
     lo = locals()
-    record_locals(lo, test_counter)
+    record_locals(lo, bad_sumOdds_causal_map)
     return sum_4
 
 #generate python causal map
-causal_map = {'n_2':['n_0','n_1','n_1','n_0'],'n_1':['n_2'],'n_3':['n_0','n_1','n_1','n_0'],'sum_3':['sum_0','sum_2','n_1','n_0'],'sum_2':['sum_1','sum_3','n_2'],'sum_1':['sum_3','n_2'],'sum_0':[],'sum_4':['sum_0','sum_2','n_1','n_0'],}
+bad_sumOdds_causal_map = {'n_2':['n_0','n_1','n_1','n_0'],'n_1':['n_2'],'n_3':['n_0','n_1','n_1','n_0'],'sum_3':['sum_0','sum_2','n_1','n_0'],'sum_2':['sum_1','sum_3','n_2'],'sum_1':['sum_3','n_2'],'sum_0':[],'sum_4':['sum_0','sum_2','n_1','n_0'],}
 
 #added phi names
-phi_names_set = {'sum_3','n_2','sum_2','sum_4','n_3',}
+bad_sumOdds_phi_names_set = {'sum_3','n_2','sum_2','sum_4','n_3',}
 
 def sum_divs_and_rems(n):
     sum = 0
@@ -127,20 +127,20 @@ def bad_sum_divs_and_rems(n):
     n_3 = phi0.phiExit(n_0, n_1)
     out_2 = phi0.phiExit(None, out_0)
     lo = locals()
-    record_locals(lo, test_counter)
+    record_locals(lo, bad_sum_divs_and_rems_causal_map)
     return out_2
 
-'''
+
 # generate python causal map
-causal_map = {'n_2': ['n_0', 'n_1'], 'n_1': ['n_2'], 'r_0': ['n_2'], 'n_3': ['n_0', 'n_1'], 'r_2': ['r_0'],
+bad_sum_divs_and_rems_causal_map = {'n_2': ['n_0', 'n_1'], 'n_1': ['n_2'], 'r_0': ['n_2'], 'n_3': ['n_0', 'n_1'], 'r_2': ['r_0'],
               'r_1': ['r_0'], 'sum_5': ['sum_0', 'sum_3'], 'sum_4': ['sum_0', 'sum_3'], 'out_0': ['sum_3'],
               'out_2': ['out_0'], 'out_1': ['out_0'], 'd_0': ['n_2'], 'sum_3': ['sum_1', 'sum_2', 'r_0'],
               'sum_2': ['sum_4', 'r_0'], 'sum_1': ['sum_4', 'd_0'], 'd_2': ['d_0'], 'sum_0': [], 'd_1': ['d_0'], }
 
 # added phi names
-phi_names_set = {'r_1', 'd_1', 'sum_4', 'n_2', 'out_1',
+bad_sum_divs_and_rems_phi_names_set = {'r_1', 'd_1', 'sum_4', 'n_2', 'out_1',
                  'sum_3', 'r_2', 'd_2', 'sum_5', 'n_3', 'out_2', }
-'''
+
 
 # Basic Algorithms in Number Theory by Buhler & Wagon, 2008.
 def right_to_left_exp(x, n):
@@ -202,13 +202,13 @@ def bad_right_to_left_exp(x, n):
     y_4 = phi0.phiExit(y_0, y_2)
     n_3 = phi0.phiExit(n_0, n_1)
     lo = locals()
-    record_locals(lo, test_counter)
+    record_locals(lo, bad_right_to_left_exp_causal_map)
     return y_4
 
 
 # generate python causal map
-'''
-causal_map = {'n_2': ['n_0', 'n_1', 'n_0', 'n_1'], 'p_0': ['r_0'], 'n_1': ['n_2'], 'r_0': ['n_2'],
+
+bad_right_to_left_exp_causal_map = {'n_2': ['n_0', 'n_1', 'n_0', 'n_1'], 'p_0': ['r_0'], 'n_1': ['n_2'], 'r_0': ['n_2'],
               'p_2': ['p_0', 'n_0', 'n_1'],
               'p_1': ['p_0', 'n_0', 'n_1'],
               'n_3': ['n_0', 'n_1', 'n_0', 'n_1'], 'r_2': ['r_0', 'n_0', 'n_1'], 'r_1': ['r_0', 'n_0', 'n_1'],
@@ -220,12 +220,12 @@ causal_map = {'n_2': ['n_0', 'n_1', 'n_0', 'n_1'], 'p_0': ['r_0'], 'n_1': ['n_2'
 
 #added phi names
 phi_names_set = {'p_1','r_1','x_2','y_3','n_2','y_2','p_2','r_2','x_3','y_4','n_3',}
-'''
+
 
 # this function merge local variables and its covariates into global_value_dict
 
 
-def record_locals(lo, i):
+def record_locals(lo, causal_map):
     for name in lo:
         # if this postfix is in the name of the variable, skip it
         if '_IV' in name:
@@ -243,7 +243,7 @@ def record_locals(lo, i):
                     new_row.append(np.float64(lo[pa]))
                 else:
                     new_row.append(lo[pa])
-            global_value_dict[name].loc[i] = new_row
+            global_value_dict[name].loc[test_counter] = new_row
 
 
 good_dict = {}
@@ -270,7 +270,15 @@ fails = 0
 def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
     global test_counter
     global fails
-    print("------- Test of Function", bad_func.__name__, "-------")
+    global good_dict
+    global bad_dict
+    global global_value_dict
+    test_counter = 0
+    fails = 0
+    good_dict = {}
+    bad_dict = {}
+    global_value_dict = {}
+    print("\n------- Test of Function", bad_func.__name__, "-------")
     sig = signature(good_func)
     args_length = len(sig.parameters)
     for _ in range(n_tests):
