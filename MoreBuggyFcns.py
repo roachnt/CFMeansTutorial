@@ -215,24 +215,35 @@ phi_names_set = {'p_1','r_1','x_2','y_3','n_2','y_2','p_2','r_2','x_3','y_4','n_
 # this function merge local variables and its covariates into global_value_dict
 
 
-def record_locals(lo, causal_map):
-    for name in lo:
+def record_locals(local_vars, causal_map):
+    with open("ssa_variables.csv", "a") as f:
+        if test_counter == 0:
+            column_names = list(local_vars.keys())
+            column_names.append("output")
+            column_names.append("incorrect")
+            f.write(", ".join(column_names) +"\n")
+            values = [str(value) for value in list(local_vars.values())]
+            f.write(", ".join(values))
+        else:
+            values = [str(value) for value in list(local_vars.values())]
+            f.write(", ".join(values))
+    for name in local_vars:
         # if this postfix is in the name of the variable, skip it
         if '_IV' in name:
             continue
         # if the variable is a number and in the causal map
-        if isinstance(lo[name], numbers.Number) and name in causal_map:
+        if isinstance(local_vars[name], numbers.Number) and name in causal_map:
             if name not in global_value_dict:
                 columns = causal_map[name].copy()
                 columns.insert(0, name)
                 global_value_dict[name] = pd.DataFrame(columns=columns)
-            new_row = [np.float64(lo[name])]
+            new_row = [np.float64(local_vars[name])]
 
             for pa in causal_map[name]:
-                if isinstance(lo[pa], numbers.Number):
-                    new_row.append(np.float64(lo[pa]))
+                if isinstance(local_vars[pa], numbers.Number):
+                    new_row.append(np.float64(local_vars[pa]))
                 else:
-                    new_row.append(lo[pa])
+                    new_row.append(local_vars[pa])
             global_value_dict[name].loc[test_counter] = new_row
 
 
@@ -260,26 +271,27 @@ fails = 0
 def test_function(good_func, bad_func, n_tests, arg_min=1, arg_max=10):
     global test_counter
     global fails
-    global good_dict
-    global bad_dict
-    global global_value_dict
-    test_counter = 0
-    fails = 0
-    good_dict = {}
-    bad_dict = {}
-    global_value_dict = {}
     print("\n------- Test of Function", bad_func.__name__, "-------")
     sig = signature(good_func)
     args_length = len(sig.parameters)
+    open('ssa_variables.csv', 'w').close()
     for _ in range(n_tests):
         args = [random.randint(arg_min, arg_max) for arg in range(args_length)]
         good_dict[test_counter] = good_func(*args)
         bad_dict[test_counter] = bad_func(*args)
+        with open("ssa_variables.csv", "a") as f:
+            f.write(", " + str(bad_dict[test_counter]))
         if abs(bad_dict[test_counter] - good_dict[test_counter]) > 0:
+            with open("ssa_variables.csv", "a") as f:
+                f.write(", " + "True" + "\n")
             fails = fails + 1
+        else:
+            with open("ssa_variables.csv", "a") as f:
+                f.write(", " + "False" + "\n")
         test_counter += 1
 
 
-test_function(sumOdds, bad_sumOdds, 500)
+# change this function to change the function being tested
+test_function(right_to_left_exp, bad_right_to_left_exp, 500)
 
-print("Failures: {0:10d}".format(fails))
+print("Failures: ", fails)

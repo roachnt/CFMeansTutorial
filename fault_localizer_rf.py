@@ -105,3 +105,6 @@ result = suspicious_ranking(global_value_dict, 0)
 pd.set_option("display.precision", 10)
 print('*************Target variables in total: ', len(result), '*************')
 print(result)
+
+with open("result.txt", "w") as f:
+    f.write(str(result))
