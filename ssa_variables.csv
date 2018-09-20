@@ -1,101 +1,500 @@
-phiNames, phiPreds, phi0, n_3, n_1, n_2, y_4, y_2, y_1, y_3, y_0, x_3, x_1, x_2, r_2, r_0, r_1, p_2, p_0, p_1, n_0, x_0, gen_bad, n, x, output, incorrect
-"[9765625, 25]", "[True]", <phi.Phi object at 0x10ba15780>, 0, 0, 1, 9765625, 9765625, 9765625, 25, 1, 152587890625, 152587890625, 390625, 1, 1, 0, True, True, False, 10, 5, False, 10, 5, 9765625, False
-"[24.246340521389175, 1.180824702289863]", "[True]", <phi.Phi object at 0x10ba15ac8>, 0, 0, 1, 24.246340521389175, 24.246340521389175, 24.246340521389175, 1.180824702289863, 1, 4096, 4096, 64, 1, 1, 1, True, True, True, 3, 8, True, 3, 8, 24.246340521389175, True
-"[100000000, 1]", "[True]", <phi.Phi object at 0x10ba15c18>, 0, 0, 1, 100000000, 100000000, 100000000, 1, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 8, 10, False, 8, 10, 100000000, False
-"[10000000000, 100]", "[True]", <phi.Phi object at 0x10ba15cf8>, 0, 0, 1, 10000000000, 10000000000, 10000000000, 100, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 10, 10, False, 10, 10, 10000000000, False
-"[5, 1]", "[True]", <phi.Phi object at 0x10ba15dd8>, 0, 0, 1, 5, 5, 5, 1, 1, 25, 25, 5, 1, 1, None, True, True, None, 1, 5, False, 1, 5, 5, False
-"[1171335.5373406524, 1]", "[True]", <phi.Phi object at 0x10bb16748>, 0, 0, 1, 1171335.5373406524, 1171335.5373406524, 1171335.5373406524, 1, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 8, 7, True, 8, 7, 1171335.5373406524, True
-"[243, 3]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 243, 243, 243, 3, 1, 6561, 6561, 81, 1, 1, 0, True, True, False, 5, 3, False, 5, 3, 243, False
-"[1024, 4]", "[True]", <phi.Phi object at 0x10bb2bcf8>, 0, 0, 1, 1024, 1024, 1024, 4, 1, 65536, 65536, 256, 1, 1, 0, True, True, False, 10, 2, False, 10, 2, 1024, False
-"[64, 1]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 64, 64, 64, 1, 1, 4096, 4096, 64, 1, 1, 0, True, True, False, 2, 8, False, 2, 8, 64, False
-"[60466176, 36]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 60466176, 60466176, 60466176, 36, 1, 2821109907456, 2821109907456, 1679616, 1, 1, 0, True, True, False, 10, 6, False, 10, 6, 60466176, False
-"[1, 1]", "[True]", <phi.Phi object at 0x10bb18b38>, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, True, True, False, 9, 1, False, 9, 1, 1, False
-"[16, 1]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 16, 16, 16, 1, 1, 256, 256, 16, 1, 1, 0, True, True, False, 4, 2, False, 4, 2, 16, False
-"[4, 1]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 4, 4, 4, 1, 1, 16, 16, 4, 1, 1, 0, True, True, False, 2, 2, False, 2, 2, 4, False
-"[0.04460033238375873, 0.012843789472681166]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 0.04460033238375873, 0.04460033238375873, 0.04460033238375873, 0.012843789472681166, 1, 81, 81, 9, 1, 1, 1, True, True, True, 3, 3, True, 3, 3, 0.04460033238375873, True
-"[5.258106036008474, 0.7648071714005967]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 5.258106036008474, 5.258106036008474, 5.258106036008474, 0.7648071714005967, 1, 6561, 6561, 81, 1, 1, 1, True, True, True, 3, 9, True, 3, 9, 5.258106036008474, True
-"[55.03453602514368, 1]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 55.03453602514368, 55.03453602514368, 55.03453602514368, 1, 1, 4096, 4096, 64, 1, 1, 0, True, True, False, 2, 8, True, 2, 8, 55.03453602514368, True
-"[49633244.59705189, 7.8483953181917245]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 49633244.59705189, 49633244.59705189, 49633244.59705189, 7.8483953181917245, 1, 281474976710656, 281474976710656, 16777216, 1, 1, 0, True, True, False, 9, 8, True, 9, 8, 49633244.59705189, True
-"[40119.48136132643, 13.171611684784999]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 40119.48136132643, 40119.48136132643, 40119.48136132643, 13.171611684784999, 1, 43046721, 43046721, 6561, 1, 1, 1, True, True, True, 6, 9, True, 6, 9, 40119.48136132643, True
-"[1277.3804326205354, 1]", "[True]", <phi.Phi object at 0x10bb16748>, 0, 0, 1, 1277.3804326205354, 1277.3804326205354, 1277.3804326205354, 1, 1, 5764801, 5764801, 2401, 1, 1, 0, True, True, False, 4, 7, True, 4, 7, 1277.3804326205354, True
-"[3, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 3, 3, 3, 1, 1, 9, 9, 3, 1, 1, None, True, True, None, 1, 3, False, 1, 3, 3, False
-"[282475249, 49]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 282475249, 282475249, 282475249, 49, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 10, 7, False, 10, 7, 282475249, False
-"[3653257.711080677, 1]", "[True]", <phi.Phi object at 0x10bb2b898>, 0, 0, 1, 3653257.711080677, 3653257.711080677, 3653257.711080677, 1, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 8, 7, True, 8, 7, 3653257.711080677, True
-"[107.48934917754228, 1]", "[True]", <phi.Phi object at 0x109d7ff60>, 0, 0, 1, 107.48934917754228, 107.48934917754228, 107.48934917754228, 1, 1, 1679616, 1679616, 1296, 1, 1, 0, True, True, False, 4, 6, True, 4, 6, 107.48934917754228, True
-"[26.147431066278912, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 26.147431066278912, 26.147431066278912, 26.147431066278912, 1, 1, 4096, 4096, 64, 1, 1, 0, True, True, False, 2, 8, True, 2, 8, 26.147431066278912, True
-"[0.31658619288135603, 1]", "[True]", <phi.Phi object at 0x10ba88ef0>, 0, 0, 1, 0.31658619288135603, 0.31658619288135603, 0.31658619288135603, 1, 1, 1, 1, 1, 1, 1, None, True, True, None, 1, 1, True, 1, 1, 0.31658619288135603, True
-"[0.4268975552266952, 0.5755487693755063]", "[True]", <phi.Phi object at 0x10ba88208>, 0, 0, 1, 0.4268975552266952, 0.4268975552266952, 0.4268975552266952, 0.5755487693755063, 1, 1, 1, 1, 1, 1, 1, True, True, True, 6, 1, True, 6, 1, 0.4268975552266952, True
-"[1, 1]", "[True]", <phi.Phi object at 0x10ba88ef0>, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, True, True, False, 2, 1, False, 2, 1, 1, False
-"[64, 4]", "[True]", <phi.Phi object at 0x10bb18ef0>, 0, 0, 1, 64, 64, 64, 4, 1, 256, 256, 16, 1, 1, 1, True, True, True, 3, 4, False, 3, 4, 64, False
-"[1000000000, 10]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1000000000, 1000000000, 1000000000, 10, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 9, 10, False, 9, 10, 1000000000, False
-"[93.15223835081792, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 93.15223835081792, 93.15223835081792, 93.15223835081792, 1, 1, 10000, 10000, 100, 1, 1, 0, True, True, False, 2, 10, True, 2, 10, 93.15223835081792, True
-"[2183.3259893667246, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 2183.3259893667246, 2183.3259893667246, 2183.3259893667246, 1, 1, 16777216, 16777216, 4096, 1, 1, 0, True, True, False, 4, 8, True, 4, 8, 2183.3259893667246, True
-"[3612969.4145488515, 1]", "[True]", <phi.Phi object at 0x10bb16748>, 0, 0, 1, 3612969.4145488515, 3612969.4145488515, 3612969.4145488515, 1, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 8, 7, True, 8, 7, 3612969.4145488515, True
-"[6.0367028528386655, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 6.0367028528386655, 6.0367028528386655, 6.0367028528386655, 1, 1, 100, 100, 10, 1, 1, None, True, True, None, 1, 10, True, 1, 10, 6.0367028528386655, True
-"[1476.9184939548763, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1476.9184939548763, 1476.9184939548763, 1476.9184939548763, 1, 1, 5764801, 5764801, 2401, 1, 1, 0, True, True, False, 4, 7, True, 4, 7, 1476.9184939548763, True
-"[495456.58377659874, 9.502676757838984]", "[True]", <phi.Phi object at 0x10bb187b8>, 0, 0, 1, 495456.58377659874, 495456.58377659874, 495456.58377659874, 9.502676757838984, 1, 4294967296, 4294967296, 65536, 1, 1, 0, True, True, False, 10, 4, True, 10, 4, 495456.58377659874, True
-"[64, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 64, 64, 64, 1, 1, 4096, 4096, 64, 1, 1, 0, True, True, False, 2, 8, False, 2, 8, 64, False
-"[15.117169569666531, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 15.117169569666531, 15.117169569666531, 15.117169569666531, 1, 1, 256, 256, 16, 1, 1, 0, True, True, False, 2, 4, True, 2, 4, 15.117169569666531, True
-"[1, 1]", "[True]", <phi.Phi object at 0x10ba88128>, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, True, True, True, 3, 1, False, 3, 1, 1, False
-"[100000000, 1]", "[True]", <phi.Phi object at 0x10bb18ef0>, 0, 0, 1, 100000000, 100000000, 100000000, 1, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 8, 10, False, 8, 10, 100000000, False
-"[125, 5]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 125, 125, 125, 5, 1, 625, 625, 25, 1, 1, 1, True, True, True, 3, 5, False, 3, 5, 125, False
-"[387420489, 9]", "[True]", <phi.Phi object at 0x10ba88128>, 0, 0, 1, 387420489, 387420489, 387420489, 9, 1, 1853020188851841, 1853020188851841, 43046721, 1, 1, 0, True, True, False, 9, 9, False, 9, 9, 387420489, False
-"[49, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 49, 49, 49, 1, 1, 2401, 2401, 49, 1, 1, 0, True, True, False, 2, 7, False, 2, 7, 49, False
-"[1, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, True, True, True, 7, 1, False, 7, 1, 1, False
-"[4251.236620921086, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 4251.236620921086, 4251.236620921086, 4251.236620921086, 1, 1, 43046721, 43046721, 6561, 1, 1, 0, True, True, False, 4, 9, True, 4, 9, 4251.236620921086, True
-"[3203365.955446985, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 3203365.955446985, 3203365.955446985, 3203365.955446985, 1, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 8, 7, True, 8, 7, 3203365.955446985, True
-"[64, 4]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 64, 64, 64, 4, 1, 256, 256, 16, 1, 1, 1, True, True, True, 3, 4, False, 3, 4, 64, False
-"[0.15543552024898966, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 0.15543552024898966, 0.15543552024898966, 0.15543552024898966, 1, 1, 4, 4, 2, 1, 1, None, True, True, None, 1, 2, True, 1, 2, 0.15543552024898966, True
-"[64, 4]", "[True]", <phi.Phi object at 0x10bb18f60>, 0, 0, 1, 64, 64, 64, 4, 1, 256, 256, 16, 1, 1, 1, True, True, True, 6, 2, False, 6, 2, 64, False
-"[279936, 216]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 279936, 279936, 279936, 216, 1, 1679616, 1679616, 1296, 1, 1, 1, True, True, True, 7, 6, False, 7, 6, 279936, False
-"[397042638.56766886, 4.820595515615849]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 397042638.56766886, 397042638.56766886, 397042638.56766886, 4.820595515615849, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 9, 10, True, 9, 10, 397042638.56766886, True
-"[77.49168618868515, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 77.49168618868515, 77.49168618868515, 77.49168618868515, 1, 1, 1679616, 1679616, 1296, 1, 1, 0, True, True, False, 4, 6, True, 4, 6, 77.49168618868515, True
-"[10000000000, 100]", "[True]", <phi.Phi object at 0x10ba15d30>, 0, 0, 1, 10000000000, 10000000000, 10000000000, 100, 1, 10000000000000000, 10000000000000000, 100000000, 1, 1, 0, True, True, False, 10, 10, False, 10, 10, 10000000000, False
-"[8.363162944032354, 1]", "[True]", <phi.Phi object at 0x10bb18b38>, 0, 0, 1, 8.363162944032354, 8.363162944032354, 8.363162944032354, 1, 1, 4096, 4096, 64, 1, 1, 0, True, True, False, 2, 8, True, 2, 8, 8.363162944032354, True
-"[59049, 9]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 59049, 59049, 59049, 9, 1, 43046721, 43046721, 6561, 1, 1, 0, True, True, False, 5, 9, False, 5, 9, 59049, False
-"[276612.7638947922, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 276612.7638947922, 276612.7638947922, 276612.7638947922, 1, 1, 152587890625, 152587890625, 390625, 1, 1, 0, True, True, False, 8, 5, True, 8, 5, 276612.7638947922, True
-"[282475249, 49]", "[True]", <phi.Phi object at 0x10bab9588>, 0, 0, 1, 282475249, 282475249, 282475249, 49, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 10, 7, False, 10, 7, 282475249, False
-"[729, 9]", "[True]", <phi.Phi object at 0x10bb2b9e8>, 0, 0, 1, 729, 729, 729, 9, 1, 6561, 6561, 81, 1, 1, 1, True, True, True, 6, 3, False, 6, 3, 729, False
-"[31.48790702094006, 1.4841353353460067]", "[True]", <phi.Phi object at 0x10bab9dd8>, 0, 0, 1, 31.48790702094006, 31.48790702094006, 31.48790702094006, 1.4841353353460067, 1, 6561, 6561, 81, 1, 1, 1, True, True, True, 6, 3, True, 6, 3, 31.48790702094006, True
-"[827642.5299481507, 2.880022614355198]", "[True]", <phi.Phi object at 0x10ba9eb00>, 0, 0, 1, 827642.5299481507, 827642.5299481507, 827642.5299481507, 2.880022614355198, 1, 152587890625, 152587890625, 390625, 1, 1, 0, True, True, False, 9, 5, True, 9, 5, 827642.5299481507, True
-"[3.9662496423900335, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 3.9662496423900335, 3.9662496423900335, 3.9662496423900335, 1, 1, 49, 49, 7, 1, 1, None, True, True, None, 1, 7, True, 1, 7, 3.9662496423900335, True
-"[1320.2315539410622, 47.5140080772986]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1320.2315539410622, 1320.2315539410622, 1320.2315539410622, 47.5140080772986, 1, 65536, 65536, 256, 1, 1, 1, True, True, True, 7, 4, True, 7, 4, 1320.2315539410622, True
-"[2.5496162713862294, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 2.5496162713862294, 2.5496162713862294, 2.5496162713862294, 1, 1, 100, 100, 10, 1, 1, None, True, True, None, 1, 10, True, 1, 10, 2.5496162713862294, True
-"[92.66715364600539, 5.919926687822931]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 92.66715364600539, 92.66715364600539, 92.66715364600539, 5.919926687822931, 1, 6561, 6561, 81, 1, 1, 1, True, True, True, 6, 3, True, 6, 3, 92.66715364600539, True
-"[66.00125772154206, 0.7282132059600079]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 66.00125772154206, 66.00125772154206, 66.00125772154206, 0.7282132059600079, 1, 43046721, 43046721, 6561, 1, 1, 0, True, True, False, 5, 9, True, 5, 9, 66.00125772154206, True
-"[160252.73775505731, 2.6005188330814284]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 160252.73775505731, 160252.73775505731, 160252.73775505731, 2.6005188330814284, 1, 4294967296, 4294967296, 65536, 1, 1, 0, True, True, False, 9, 4, True, 9, 4, 160252.73775505731, True
-"[3125, 5]", "[True]", <phi.Phi object at 0x10bab9518>, 0, 0, 1, 3125, 3125, 3125, 5, 1, 390625, 390625, 625, 1, 1, 0, True, True, False, 5, 5, False, 5, 5, 3125, False
-"[1765.7820017629272, 7.824053451674332]", "[True]", <phi.Phi object at 0x10bac20f0>, 0, 0, 1, 1765.7820017629272, 1765.7820017629272, 1765.7820017629272, 7.824053451674332, 1, 100000000, 100000000, 10000, 1, 1, 0, True, True, False, 5, 10, True, 5, 10, 1765.7820017629272, True
-"[4.006440753143763, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 4.006440753143763, 4.006440753143763, 4.006440753143763, 1, 1, 25, 25, 5, 1, 1, None, True, True, None, 1, 5, True, 1, 5, 4.006440753143763, True
-"[625, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 625, 625, 625, 1, 1, 390625, 390625, 625, 1, 1, 0, True, True, False, 4, 5, False, 4, 5, 625, False
-"[81, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 81, 81, 81, 1, 1, 6561, 6561, 81, 1, 1, 0, True, True, False, 2, 9, False, 2, 9, 81, False
-"[27.53798832554484, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 27.53798832554484, 27.53798832554484, 27.53798832554484, 1, 1, 1296, 1296, 36, 1, 1, 0, True, True, False, 2, 6, True, 2, 6, 27.53798832554484, True
-"[12243.6223788995, 7.9696763805326825]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 12243.6223788995, 12243.6223788995, 12243.6223788995, 7.9696763805326825, 1, 16777216, 16777216, 4096, 1, 1, 1, True, True, True, 6, 8, True, 6, 8, 12243.6223788995, True
-"[5467066.730633418, 705.824817372594]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 5467066.730633418, 5467066.730633418, 5467066.730633418, 705.824817372594, 1, 100000000, 100000000, 10000, 1, 1, 1, True, True, True, 7, 10, True, 7, 10, 5467066.730633418, True
-"[4096, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 4096, 4096, 4096, 1, 1, 16777216, 16777216, 4096, 1, 1, 0, True, True, False, 4, 8, False, 4, 8, 4096, False
-"[483.0846093240609, 0.7093690330490133]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 483.0846093240609, 483.0846093240609, 483.0846093240609, 0.7093690330490133, 1, 5764801, 5764801, 2401, 1, 1, 0, True, True, False, 5, 7, True, 5, 7, 483.0846093240609, True
-"[823543, 343]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 823543, 823543, 823543, 343, 1, 5764801, 5764801, 2401, 1, 1, 1, True, True, True, 7, 7, False, 7, 7, 823543, False
-"[4096, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 4096, 4096, 4096, 1, 1, 16777216, 16777216, 4096, 1, 1, 0, True, True, False, 4, 8, False, 4, 8, 4096, False
-"[384.37545274893336, 4.177875942311271]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 384.37545274893336, 384.37545274893336, 384.37545274893336, 4.177875942311271, 1, 65536, 65536, 256, 1, 1, 1, True, True, True, 7, 4, True, 7, 4, 384.37545274893336, True
-"[379.2927306187148, 1]", "[True]", <phi.Phi object at 0x10bab9080>, 0, 0, 1, 379.2927306187148, 379.2927306187148, 379.2927306187148, 1, 1, 390625, 390625, 625, 1, 1, 0, True, True, False, 4, 5, True, 4, 5, 379.2927306187148, True
-"[27, 3]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 27, 27, 27, 3, 1, 81, 81, 9, 1, 1, 1, True, True, True, 3, 3, False, 3, 3, 27, False
-"[354.36199965261955, 2.7288459119165642]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 354.36199965261955, 354.36199965261955, 354.36199965261955, 2.7288459119165642, 1, 390625, 390625, 625, 1, 1, 0, True, True, False, 5, 5, True, 5, 5, 354.36199965261955, True
-"[4782969, 729]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 4782969, 4782969, 4782969, 729, 1, 43046721, 43046721, 6561, 1, 1, 1, True, True, True, 7, 9, False, 7, 9, 4782969, False
-"[25, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 25, 25, 25, 1, 1, 625, 625, 25, 1, 1, 0, True, True, False, 2, 5, False, 2, 5, 25, False
-"[1.75146809090529, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1.75146809090529, 1.75146809090529, 1.75146809090529, 1, 1, 49, 49, 7, 1, 1, None, True, True, None, 1, 7, True, 1, 7, 1.75146809090529, True
-"[5.677607055913171, 0.7925575272861951]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 5.677607055913171, 5.677607055913171, 5.677607055913171, 0.7925575272861951, 1, 625, 625, 25, 1, 1, 1, True, True, True, 3, 5, True, 3, 5, 5.677607055913171, True
-"[821393.4915193615, 19.570435401115102]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 821393.4915193615, 821393.4915193615, 821393.4915193615, 19.570435401115102, 1, 152587890625, 152587890625, 390625, 1, 1, 0, True, True, False, 10, 5, True, 10, 5, 821393.4915193615, True
-"[1024, 4]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1024, 1024, 1024, 4, 1, 65536, 65536, 256, 1, 1, 0, True, True, False, 10, 2, False, 10, 2, 1024, False
-"[31619.70956836543, 28.628895080138495]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 31619.70956836543, 31619.70956836543, 31619.70956836543, 28.628895080138495, 1, 1679616, 1679616, 1296, 1, 1, 1, True, True, True, 6, 6, True, 6, 6, 31619.70956836543, True
-"[3151.874804048419, 15.840309910498076]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 3151.874804048419, 3151.874804048419, 3151.874804048419, 15.840309910498076, 1, 65536, 65536, 256, 1, 1, 1, True, True, True, 6, 4, True, 6, 4, 3151.874804048419, True
-"[24.379576043840615, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 24.379576043840615, 24.379576043840615, 24.379576043840615, 1, 1, 65536, 65536, 256, 1, 1, 0, True, True, False, 4, 4, True, 4, 4, 24.379576043840615, True
-"[146148.56591352847, 70.42565882741289]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 146148.56591352847, 146148.56591352847, 146148.56591352847, 70.42565882741289, 1, 43046721, 43046721, 6561, 1, 1, 1, True, True, True, 6, 9, True, 6, 9, 146148.56591352847, True
-"[36, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 36, 36, 36, 1, 1, 1296, 1296, 36, 1, 1, 0, True, True, False, 2, 6, False, 2, 6, 36, False
-"[1027379.8078055026, 164.28333481359232]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 1027379.8078055026, 1027379.8078055026, 1027379.8078055026, 164.28333481359232, 1, 43046721, 43046721, 6561, 1, 1, 1, True, True, True, 7, 9, True, 7, 9, 1027379.8078055026, True
-"[945.4544418228539, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 945.4544418228539, 945.4544418228539, 945.4544418228539, 1, 1, 5764801, 5764801, 2401, 1, 1, 0, True, True, False, 4, 7, True, 4, 7, 945.4544418228539, True
-"[3.3962692625598807, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 3.3962692625598807, 3.3962692625598807, 3.3962692625598807, 1, 1, 25, 25, 5, 1, 1, None, True, True, None, 1, 5, True, 1, 5, 3.3962692625598807, True
-"[2256607.6729384237, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 2256607.6729384237, 2256607.6729384237, 2256607.6729384237, 1, 1, 33232930569601, 33232930569601, 5764801, 1, 1, 0, True, True, False, 8, 7, True, 8, 7, 2256607.6729384237, True
-"[9699.623954849321, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 9699.623954849321, 9699.623954849321, 9699.623954849321, 1, 1, 100000000, 100000000, 10000, 1, 1, 0, True, True, False, 4, 10, True, 4, 10, 9699.623954849321, True
-"[8, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 8, 8, 8, 1, 1, 64, 64, 8, 1, 1, None, True, True, None, 1, 8, False, 1, 8, 8, False
-"[625, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 625, 625, 625, 1, 1, 390625, 390625, 625, 1, 1, 0, True, True, False, 4, 5, False, 4, 5, 625, False
-"[65536, 1]", "[True]", <phi.Phi object at 0x109d8a2b0>, 0, 0, 1, 65536, 65536, 65536, 1, 1, 4294967296, 4294967296, 65536, 1, 1, 0, True, True, False, 8, 4, False, 8, 4, 65536, False
+, -1, False
+<phi.Phi object at 0x10d59aba8>, None, None, None, None, None, None, 3.0, 6, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 6, False, 1, 6, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59aba8>, None, None, None, None, None, None, 32.0, 16.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 4, True, 9, 4, 2, True
+<phi.Phi object at 0x10d59ae80>, None, None, None, None, None, None, 640.0, 320.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 10, True, 8, 10, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 8, True, 1, 8, 2, False
+<phi.Phi object at 0x10a149358>, <phi.Phi object at 0x10a1492e8>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, True, 1, 9, 3, False
+<phi.Phi object at 0x10a149358>, None, None, None, None, None, None, 12, 6, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 6, True, 1, 6, 2, False
+, -1, False
+<phi.Phi object at 0x10d59acc0>, None, None, None, None, None, None, 64, 32, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 2, True, 5, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10a149358>, 5.0, None, None, None, None, 5.0, 5.0, 10, 1, None, None, None, None, 1, 1, 2, 3, None, None, 3, 2, 10, False, 2, 10, 5.0, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ada0>, None, None, None, None, None, None, 2.0, 4, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 4, False, 1, 4, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10a1492e8>, None, None, None, None, None, None, 320, 160, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 10, True, 5, 10, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 1.0, 2, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 2, True, 1, 2, 2, False
+<phi.Phi object at 0x10a149358>, None, None, None, None, None, None, 32, 16, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 2, True, 4, 2, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 4.0, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 8, False, 1, 8, 2, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 640.0, 320.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 10, True, 10, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 256, 128, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 8, True, 5, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dc828>, None, None, None, None, None, None, 2.0, 4.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 8, False, 2, 8, 2, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 64, 32, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 8, True, 3, 8, 2, False
+<phi.Phi object at 0x10b90f278>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, False, 1, 5, 5, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10a149358>, None, None, None, None, None, None, 768, 384, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 6, True, 7, 6, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 24, 12, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 6, True, 2, 6, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 40, 20, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 10, True, 2, 10, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 2048, 1024, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 8, True, 8, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 128.0, 64.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 2, True, 10, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 1.0, 2.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, False, 2, 4, 2, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 512.0, 256.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 2, True, 10, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 1280.0, 640.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 10, True, 9, 10, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 384, 192, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 6, True, 6, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 96, 48, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 6, True, 4, 6, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 16.0, 8.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 8, True, 3, 8, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 1.0, 2.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, False, 2, 4, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 160.0, 80.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 10, True, 8, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 64.0, 32.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 2, True, 7, 2, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 128, 64, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 8, True, 4, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcc18>, None, None, None, None, None, None, 2560, 1280, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 10, True, 8, 10, 2, True
+<phi.Phi object at 0x10d7dcc18>, <phi.Phi object at 0x10d59ada0>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, True, 1, 9, 3, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, True, 2, 4, 2, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 48.0, 24.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 6, True, 5, 6, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 20, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, True, 1, 10, 2, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 96, 48, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 6, True, 4, 6, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 8.0, 16, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 4, True, 3, 4, 2, True
+, -1, False
+<phi.Phi object at 0x10b90f278>, <phi.Phi object at 0x10d7d9198>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, False, 1, 9, 3, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59add8>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, True, 1, 3, 3, False
+<phi.Phi object at 0x10d7dcc88>, None, None, None, None, None, None, 8, 4, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 2, True, 2, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 32.0, 16.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 4, True, 7, 4, 2, True
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 24, 12, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 6, True, 2, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcc88>, None, None, None, None, None, None, 128.0, 64.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 8, True, 6, 8, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 160.0, 320, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 10, True, 6, 10, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 5.0, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, False, 1, 10, 2, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 80.0, 40.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 10, True, 5, 10, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 768, 384, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 6, True, 7, 6, 2, True
+<phi.Phi object at 0x10d7dcc88>, None, None, None, None, None, None, 512, 256, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 8, True, 6, 8, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcc88>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 2, True, 3, 2, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, True, 2, 4, 2, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 128, 64, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 8, True, 4, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcc88>, None, None, None, None, None, None, 384.0, 768.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 6, True, 10, 6, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcc88>, 3.0, None, None, None, None, 3.0, 3.0, 6, 1, None, None, None, None, 1, 1, 2, 3, None, None, 3, 2, 6, False, 2, 6, 3.0, False
+, -1, False
+<phi.Phi object at 0x10d7d9160>, None, None, None, None, None, None, 48, 24, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 6, True, 3, 6, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 512.0, 256.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 8, True, 8, 8, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 1.0, 2.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, False, 2, 4, 2, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59af28>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, False, 1, 5, 5, False
+, -1, False
+<phi.Phi object at 0x10d7d9198>, None, None, None, None, None, None, 128.0, 64.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 8, True, 6, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 256, 128, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 4, True, 6, 4, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 160.0, 320, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 10, True, 6, 10, 2, True
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 2048.0, 1024.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 8, True, 10, 8, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9160>, 5.0, None, None, None, None, 5.0, 5.0, 10, 1, None, None, None, None, 1, 1, 2, 3, None, None, 3, 2, 10, False, 2, 10, 5.0, False
+<phi.Phi object at 0x10d59ad68>, <phi.Phi object at 0x10d59aba8>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, False, 1, 9, 3, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, <phi.Phi object at 0x10d7d9080>, None, None, 3.0, 3.0, 9, 9, None, None, None, None, 1, 1, 2, 2, None, None, None, None, 3, 3, 2, 9, True, 2, 9, 3, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10b90f278>, None, None, None, None, None, None, 256, 128, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 2, True, 7, 2, 2, True
+, -1, False
+<phi.Phi object at 0x10d7da128>, <phi.Phi object at 0x10b90f278>, None, None, 3.0, 3.0, 9, 9, None, None, None, None, 1, 1, 2, 2, None, None, None, None, 3, 3, 2, 9, True, 2, 9, 3, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da128>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, False, 1, 3, 3, False
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 4096, 2048, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+<phi.Phi object at 0x10d59aeb8>, None, None, None, None, None, None, 80, 40, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 10, True, 3, 10, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e0828>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, True, 1, 3, 3, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae80>, None, None, None, None, None, None, 32.0, 16.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 2, True, 6, 2, 2, True
+<phi.Phi object at 0x10d7d9160>, None, None, None, None, None, None, 320.0, 640.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 10, True, 9, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d59ae80>, None, None, None, None, None, None, 32, 16, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 8, True, 2, 8, 2, False
+<phi.Phi object at 0x10d7d90f0>, <phi.Phi object at 0x10d7d9fd0>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, False, 1, 9, 3, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ada0>, None, None, None, None, None, None, 80.0, 160, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 10, True, 5, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 3072, 1536, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 6, True, 9, 6, 2, True
+<phi.Phi object at 0x10d59af28>, None, None, None, None, None, None, 2048.0, 1024.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 8, True, 10, 8, 2, True
+<phi.Phi object at 0x10d7dc208>, None, None, None, None, None, None, 640, 320, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 10, True, 6, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 1280.0, 2560, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 10, True, 9, 10, 2, True
+<phi.Phi object at 0x10d7dcd68>, None, None, None, None, None, None, 32, 16, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 2, True, 4, 2, 2, True
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 1.0, 2, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 2, False, 1, 2, 2, False
+, -1, False
+<phi.Phi object at 0x10d7dc208>, None, None, None, None, None, None, 192.0, 384.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 6, True, 9, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 96.0, 48.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 6, True, 6, 6, 2, True
+<phi.Phi object at 0x10d7dcd68>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 8, True, 1, 8, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 16.0, 8.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 2, True, 5, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dc208>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, False, 1, 3, 3, False
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 1536.0, 768.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 6, True, 10, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcd68>, None, None, None, None, None, None, 128, 64, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 8, True, 4, 8, 2, True
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 10.0, 20, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 10, True, 2, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d7dc208>, None, None, None, None, None, None, 12, 6, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 6, True, 1, 6, 2, False
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 512, 256, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 8, True, 6, 8, 2, True
+, -1, False
+<phi.Phi object at 0x10d7dc208>, None, None, None, None, None, None, 512, 256, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 8, True, 6, 8, 2, True
+<phi.Phi object at 0x10d7da470>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, True, 1, 5, 5, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dcd68>, None, None, None, None, None, None, 1.0, 2, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 2, False, 1, 2, 2, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59af60>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, False, 1, 5, 5, False
+, -1, False
+<phi.Phi object at 0x10d7d9d30>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, True, 1, 3, 3, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59aba8>, None, None, None, None, None, None, 192.0, 96.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 6, True, 7, 6, 2, True
+<phi.Phi object at 0x10d7d9080>, None, None, None, None, None, None, 320, 160, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 10, True, 5, 10, 2, True
+<phi.Phi object at 0x10d59ada0>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 2, True, 3, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9080>, None, None, None, None, None, None, 256, 128, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 2, True, 7, 2, 2, True
+<phi.Phi object at 0x10d59acc0>, None, None, None, None, None, None, 8.0, 16, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 8, True, 2, 8, 2, False
+<phi.Phi object at 0x10d7d90f0>, None, None, None, None, None, None, 1024.0, 512.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59aef0>, None, None, None, None, None, None, 20, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, True, 1, 10, 2, False
+, -1, False
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 2, True, 3, 2, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dd860>, 7, None, None, None, None, 7, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 7, False, 1, 7, 7, False
+, -1, False
+<phi.Phi object at 0x10d7e0828>, None, None, None, None, None, None, 768, 384, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 6, True, 7, 6, 2, True
+<phi.Phi object at 0x10d7dd4e0>, None, None, None, None, None, None, 128, 64, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 4, True, 5, 4, 2, True
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 2048, 1024, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 2, True, 10, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dd860>, None, None, None, None, None, None, 1280.0, 640.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 10, True, 9, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d7e0828>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, True, 2, 4, 2, False
+, -1, False
+<phi.Phi object at 0x10d7dd4e0>, None, None, None, None, None, None, 160, 80, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 10, True, 4, 10, 2, True
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 16.0, 8.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 2, True, 7, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dd4e0>, None, None, None, None, None, None, 1024, 512, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 2, True, 9, 2, 2, True
+<phi.Phi object at 0x10d7e0828>, None, None, None, None, None, None, 1.0, 2, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 2, False, 1, 2, 2, False
+<phi.Phi object at 0x10d7dd860>, None, None, None, None, None, None, 32.0, 16.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 2, True, 8, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e0828>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, False, 1, 3, 3, False
+<phi.Phi object at 0x10d7dd4e0>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 2, True, 9, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 1536.0, 768.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 6, True, 10, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dd860>, None, None, None, None, None, None, 2560.0, 1280.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 10, True, 10, 10, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9d30>, None, None, None, None, None, None, 16.0, 8.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 4, True, 4, 4, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae48>, 7, None, None, None, None, 7, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 7, True, 1, 7, 7, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d90f0>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 2, True, 9, 2, 2, True
+<phi.Phi object at 0x10d7da470>, 7, None, None, None, None, 7, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 7, True, 1, 7, 7, False
+, -1, False
+<phi.Phi object at 0x10d7d90f0>, None, None, None, None, None, None, 512, 256, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 2, True, 8, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 5.0, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, False, 1, 10, 2, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 8.0, 4.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 2, True, 6, 2, 2, True
+<phi.Phi object at 0x10d7da128>, 3.0, None, None, None, None, 3.0, 3.0, 6, 1, None, None, None, None, 1, 1, 2, 3, None, None, 3, 2, 6, True, 2, 6, 3.0, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 5.0, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, True, 1, 10, 2, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da128>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, True, 1, 5, 5, False
+<phi.Phi object at 0x10d7d9080>, None, None, None, None, None, None, 192.0, 384, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 6, True, 7, 6, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7ddbe0>, None, None, None, None, None, None, 24.0, 48.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 6, True, 6, 6, 2, True
+<phi.Phi object at 0x10d7d90f0>, None, None, None, None, None, None, 3072, 1536, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 6, True, 9, 6, 2, True
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 4, 2, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 2, True, 1, 2, 2, False
+, -1, False
+<phi.Phi object at 0x10d7d90f0>, None, None, None, None, None, None, 4096, 2048, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+, -1, False
+<phi.Phi object at 0x10d7ddbe0>, None, None, None, None, None, None, 1024, 512, None, None, None, None, None, None, 0, 1, None, None, None, None, 7, 8, True, 7, 8, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 8, True, 9, 8, 2, True
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 2048, 1024, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 2, True, 10, 2, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9160>, None, None, None, None, None, None, 2560, 1280, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 10, True, 8, 10, 2, True
+, -1, False
+<phi.Phi object at 0x10d7ddbe0>, None, None, None, None, None, None, 12, 6, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 6, True, 1, 6, 2, False
+<phi.Phi object at 0x10d7d9d30>, None, None, None, None, None, None, 4096, 2048, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da128>, None, None, None, None, None, None, 8, 4, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 2, True, 2, 2, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9d30>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, False, 1, 3, 3, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae48>, None, None, None, None, None, None, 192, 96, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 6, True, 5, 6, 2, True
+, -1, False
+<phi.Phi object at 0x10d7d9d30>, None, None, None, None, None, None, 1.0, 2.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, False, 2, 4, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae48>, None, None, None, None, None, None, 5.0, 10, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 10, False, 1, 10, 2, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9fd0>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 4, True, 8, 4, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae48>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, True, 1, 3, 3, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9080>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 8, True, 9, 8, 2, True
+, -1, False
+<phi.Phi object at 0x10d59ae48>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 4, True, 2, 4, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 32.0, 16.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 4, 8, True, 4, 8, 2, True
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 512, 256, None, None, None, None, None, None, 0, 1, None, None, None, None, 8, 2, True, 8, 2, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 64, 32, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 2, True, 5, 2, 2, True
+<phi.Phi object at 0x10d7e1668>, <phi.Phi object at 0x10d59ab70>, None, None, 3.0, 3.0, 9, 9, None, None, None, None, 1, 1, 2, 2, None, None, None, None, 3, 3, 2, 9, False, 2, 9, 3, False
+<phi.Phi object at 0x10d7e0828>, <phi.Phi object at 0x10d7e0a58>, None, None, 3.0, 3.0, 9, 9, None, None, None, None, 1, 1, 2, 2, None, None, None, None, 3, 3, 2, 9, True, 2, 9, 3, False
+<phi.Phi object at 0x10d7e0828>, None, None, None, None, None, None, 512.0, 256.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 4, True, 9, 4, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 256.0, 128.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+<phi.Phi object at 0x10d7e0a58>, None, None, None, None, None, None, 4096, 2048, None, None, None, None, None, None, 0, 1, None, None, None, None, 9, 8, True, 9, 8, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7dd4e0>, None, None, None, None, None, None, 8, 4, None, None, None, None, None, None, 0, 1, None, None, None, None, 2, 2, True, 2, 2, 2, True
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 4096, 2048, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 4, True, 10, 4, 2, True
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 64, 32, None, None, None, None, None, None, 0, 1, None, None, None, None, 3, 8, True, 3, 8, 2, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, <phi.Phi object at 0x10d7e0a58>, None, None, None, 9, 9, 9, None, None, None, None, None, 1, 1, 1, None, None, None, None, 3, 3, 1, 9, True, 1, 9, 3, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7e1668>, None, None, None, None, None, None, 6144, 3072, None, None, None, None, None, None, 0, 1, None, None, None, None, 10, 6, True, 10, 6, 2, True
+<phi.Phi object at 0x10d7e1668>, 5.0, None, None, None, None, 5.0, 5.0, 10, 1, None, None, None, None, 1, 1, 2, 3, None, None, 3, 2, 10, False, 2, 10, 5.0, False
+, -1, False
+<phi.Phi object at 0x10d7d9080>, 5, None, None, None, None, 5, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 5, False, 1, 5, 5, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d59ae48>, None, None, None, None, None, None, 160.0, 80.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 6, 10, True, 6, 10, 2, True
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7d9c18>, None, None, None, None, None, None, 16, 8, None, None, None, None, None, None, 0, 1, None, None, None, None, 1, 8, True, 1, 8, 2, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
+<phi.Phi object at 0x10d7da470>, None, None, None, None, None, None, 64.0, 32.0, None, None, None, None, None, None, 0, 1, None, None, None, None, 5, 8, True, 5, 8, 2, True
+, -1, False
+<phi.Phi object at 0x10d7d9c18>, 3, None, None, None, None, 3, None, None, 1, None, None, None, None, 1, None, None, 3, None, None, 3, 1, 3, False, 1, 3, 3, False
+, -1, False
+, -1, False
+, -1, False
+, -1, False
