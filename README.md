@@ -10,6 +10,12 @@
 
 ## Adding a new example program to this repo
 
+1. Convert example program to SSA form and obtain causal map.
+2. Rename SSA form of the program to `bad_{original program name}` and name the causal map bad\_{original program name}\_causal_map.
+3. Insert bug (that occurs with probability greater than zero and less than one) into the SSA form of the program at some assignment.
+4. Before every return statement in the SSA form of the program, make a call to `record_locals(locals(), bad_{original program name}_causal_map)`.
+5. To execute a test of the program, follow the steps outlined in "Executing examples in this repo"
+
 ## More precise steps for testing a general numerical program
 
 1. Find some "correct" program <i>P</i>.
