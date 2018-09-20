@@ -7,7 +7,6 @@ import math
 from inspect import signature
 from fluky import fluky
 
-
 # Python Program to print kth prime factor
 import math
 def kPrimeFactor(n, k):
