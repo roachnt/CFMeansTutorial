@@ -34,6 +34,7 @@ def kPrimeFactor(n, k):
 
     return -1
 
+
 import math
 def bad_kPrimeFactor(n,k):
     gen_bad = random.random() > 0.5
